@@ -69,3 +69,25 @@
     z-index: 1;
 }
 
+.row-contents {
+    margin:0px auto;
+    padding: 20px 0px 20px 60px;
+    border-bottom: 1px ridge;
+    min-height:250px;
+}
+
+.colours{
+	color: black;
+}
+
+.text1{
+    font-family: 'Archivo Black';
+}
+
+.text2{
+    font-family: 'Open Sans';
+}
+
+.text3{
+    font-family: Helvetica, sans-serif;
+}
