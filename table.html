@@ -26,7 +26,7 @@
                     <li><a href="./Home.html" class="colour"><span class="fa fa-home fa-lg"></span>&nbsp Home</a></li>
                     <li><a href="About Us.html" class="colour"><span class="fa fa-info fa-lg"> &nbsp About Us</a></li>
                     <li><a href="./Contact Us.html" target="_blank" class="colour"><span class="fa fa-address-card fa-lg"></span>&nbsp Contact Us</a></li>
-                    <li class="active"><a href="#" class="colour"><span class="fa fa-id-badge fa-lg">&nbsp Profile</a></li>
+                    <li><a href="./Profile.html" class="colour"><span class="fa fa-id-badge fa-lg">&nbsp Profile</a></li>
                     </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="./Sign Up.html" target="_blank" class="colour"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -35,48 +35,52 @@
             </div>
         </div>
     </nav>
-    <caption>LIST OF NGOs</caption>
-<table style="width:60%">
-  <tr>
-    <th>NGOs</th>
-    <th>Locations</th>
-    <th>Phone number</th>
-    <th>Rating</th>
-    <th>Remember me</th>
-  </tr>
-  <tr>
-    <td>Bhoomi </td>
-    <td>Ashutosh Chowdary Ave, opposite Birla Mandir, Ballygunj Kolkata</td>
-    <td> 8240911311</td>
-    <td>4.5</td> 
-    <td><input class="form-check-input" type="checkbox" id="gridCheck"></td> 
-  </tr>
-  <tr>
-    <td>Childline India </td>
-    <td>Action Area 2, C-1, Rajarhat,   </td>
-    <td>033 4065 6086 </td>
-    <td>5 </td>
-    <td><input class="form-check-input" type="checkbox" id="gridCheck"></td> 
-  </tr>
-  <tr>
-    <td> Bharat Sevashram Sangha</td>
-    <td>  Gouranganagar, Adarshapally Rd, near Newtown, Kolkata, West Bengal  </td>
-    <td> 033 2440 5178 </td>
-    <td>5 </td>
-    <td><input class="form-check-input" type="checkbox" id="gridCheck"></td> 
-  </tr>
-  <tr>
-    <td>Child In Need </td>
-    <td> Street Number 51, AC Block(Newtown), Action Area 1A, Newtown, Kolkata, </td>
-    <td> 033 2497 8192  </td>
-    <td>5 </td>
-    <td><input class="form-check-input" type="checkbox" id="gridCheck"></td> 
-  </tr>
-</table>
-
-	<br><br><br><br>
-
-
+    <div class="container">
+        <div class="row">
+            <table>
+              <caption class="capt"><b>LIST OF NGOs near You</b></caption>  
+              <tr>
+                <th style="text-align:center">NGOs</th>
+                <th style="text-align:center">Locations</th>
+                <th style="text-align:center">Phone Number</th>
+                <th style="text-align:center">&nbsp&nbspRating&nbsp&nbsp</th>
+                <th style="text-align:center">&nbsp&nbspSelect&nbsp&nbsp</th>
+              </tr>
+              <tr>
+                <td>Bhoomi </td>
+                <td class="tab">Ashutosh Chowdary Ave, opposite Birla Mandir, Ballygunj Kolkata</td>
+                <td class="tab1"> <a href="tel:8240911311" style="color:black">8240911311</a></td>
+                <td class="tab2">4.5</td> 
+                <td><input class="form-check-input" type="checkbox" id="gridCheck" name="foo" value="bar1"></td> 
+              </tr>
+              <tr>
+                <td>Childline India </td>
+                <td class="tab">Action Area 2, C-1, Rajarhat, </td>
+                <td class="tab1"><a href="tel:033 40656086" style="color:black">033 40656086 </a></td>
+                <td class="tab2">5 </td>
+                <td><input class="form-check-input" type="checkbox" id="gridCheck" name="foo" value="bar2"></td> 
+              </tr>
+              <tr>
+                <td> Bharat Sevashram Sangha</td>
+                <td class="tab">  Gouranganagar, Adarshapally Rd, near Newtown, Kolkata, West Bengal  </td>
+                <td class="tab1"> <a href="tel:033 24405178" style="color:black">033 24405178</a> </td>
+                <td class="tab2">5 </td>
+                <td><input class="form-check-input" type="checkbox" id="gridCheck" name="foo" value="bar3"></td> 
+              </tr>
+              <tr>
+                <td>Child In Need </td>
+                <td class="tab"> Street Number 51, AC Block(Newtown), Action Area 1A, Newtown, Kolkata, </td>
+                <td class="tab1"><a href="tel:03324978192" style="color:black">033 24978192</a></td>
+                <td class="tab2">5 </td>
+                <td><input class="form-check-input " type="checkbox" id="gridCheck" name="foo" value="bar4"></td> 
+              </tr>
+            </table>
+        </div>
+        <br>
+        <input type="checkbox" onClick="toggle(this)" > Select All<br><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <br><br>
     <footer class="footer" >
         <div class="container">
             <div class="row">             
@@ -85,7 +89,7 @@
                         <li><a href="./Home.html" target="_blank" class="colour">Home</a></li>
                         <li><a href="./About Us.html" class="colour">About Us</a></li>                 
                         <li><a href="./Contact Us.html" target="_blank" class="colour">Contact Us</a></li>
-                        <li class="active"><a href="#" target="_blank" class="colour">Profile</a></li>
+                        <li ><a href="./Profile.html" target="_blank" class="colour">Profile</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5">
@@ -119,5 +123,12 @@
            </div>
         </div>
     </footer>
+    <script language="JavaScript">
+        function toggle(source) {
+          checkboxes = document.getElementsByName('foo');
+          for(var i=0, n=checkboxes.length;i<n;i++) {
+            checkboxes[i].checked = source.checked;}
+         }
+            </script>
  </body>
 </html>
