@@ -105,7 +105,32 @@
   margin-right: auto;
  }
 
- 
- .table, th, td {
-  border: 1px solid black;    
+ table, th, td {
+    border: 2px solid black;
+    width:60%;
+    text-align: center;
+    border-top-style: inset;
+}
+
+th,td{
+    padding: 20px;
+}
+
+.capt{
+    text-align:center;
+    caption-side:top;
+    font-size:200%;
+    color:black;
+}
+
+.tab{
+    padding: 25px;
+}
+
+.tab1{
+    padding: 10px;
+}
+
+.tab2{
+    padding:5px;
 }
