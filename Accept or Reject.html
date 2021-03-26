@@ -11,8 +11,8 @@
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -41,16 +41,16 @@
         <div class="row">
             <div class="col-md-12"><br><br><br>
                 <form class="searchForm" method="post">
-                    <div id="confirmation-msg"><h1 class="text1" align="center">Do you want to <b>Accept</b> the Order?</h1>
-                        <h4 class="text2" align="center"><button type="submit" id="yesButton" onClick="javascript:setTimeout(function(){window.open('Accept.html')}, 2000)">Yes</h4></button> <br>
+                    <div id="confirmation-msg"><h1 class="text1" align="center">Do you want to <b>Accept</b> the Order?</h1><br>
+                        <h4 class="text2" align="center"><button type="submit" id="yesButton" onClick="javascript:setTimeout(function(){window.open('Accept.html')}, 2000)">Yes</h4></button> <br><br>
                         <h4 class="text2" align="center"><button type="submit" id="noButton" onClick="javascript:setTimeout(function(){window.open('Reject.html')}, 2000)">No</h4></button>
                     </div>
                 </form><br>  
-                <!-- <script>
+                <script>
                     if (document.getElementById('r1').checked) {
                     rate_value = document.getElementById('r1').value;
                     }
-                </script> -->
+                </script>
             </div>
         </div>
     </div>
@@ -97,5 +97,9 @@
            </div>
         </div>
     </footer>
+    <script>
+        $('#editButton').click(function(){
+        $('#confirmation-msg').show();});
+    </script>
  </body>
 </html>
