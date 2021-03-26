@@ -42,11 +42,15 @@
             <div class="col-md-12"><br><br><br>
                 <form class="searchForm" method="post">
                     <div id="confirmation-msg"><h1 class="text1" align="center">Do you want to <b>Accept</b> the Order?</h1>
-                        <h4 class="text2" align="center"><input type="radio" name="yes_no" >Yes</h4></input> <br>
-                        <h4 class="text2" align="center"><input type="radio" name="yes_no" onClick="$('#confirmation-msg').hide()">No</h4></input>
+                        <h4 class="text2" align="center"><input type="radio" name="yes" onClick="javascript:setTimeout(function(){window.open('Accept.html')}, 2000)">Yes</h4></input> <br>
+                        <h4 class="text2" align="center"><input type="radio" name="no" onClick="javascript:setTimeout(function(){window.open('Reject.html')}, 2000)">No</h4></input>
                     </div>
                 </form><br>  
-            <h4 class="text1" align="center"><button type="submit" class="btn btn-primary">Submit</h4></button>     
+                <!-- <script>
+                    if (document.getElementById('r1').checked) {
+                    rate_value = document.getElementById('r1').value;
+                    }
+                </script> -->
             </div>
         </div>
     </div>
